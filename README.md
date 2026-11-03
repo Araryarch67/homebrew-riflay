@@ -7,8 +7,8 @@ brew install --cask araryarch67/riflay/riflay
 ```
 
 On macOS it installs Riflay.app; on Linux (x86_64) it installs the AppImage and adds
-Riflay to the application menu. The AppImage needs FUSE 2 (`libfuse2` on Debian /
-Ubuntu, `fuse2` on Arch, `fuse-libs` on Fedora).
+Riflay to the application menu. AppImages run through FUSE, which most desktops
+have; if Riflay doesn't start, install your distribution's `fuse3` package.
 
 `Casks/riflay.rb` is updated by Riflay's release workflow; change it in the Riflay
 repository (`packaging/homebrew/Casks/riflay.rb`), not here.
