@@ -2,13 +2,13 @@
 # libmpv). The release workflow fills in `version` and each file's `sha256`
 # (packaging/update_manifests.sh) and pushes the result to the tap's Casks/ folder:
 #   brew install --cask araryarch67/riflay/riflay
-# A release without the macOS build (paused for tags, see release.yml) leaves the
-# macOS sha256 unchecked, and its URL has nothing to fetch.
+# A release without the macOS build (a failed macOS job) leaves the macOS sha256
+# unchecked, and its URL has nothing to fetch.
 cask "riflay" do
-  version "1.2.0"
+  version "1.2.2"
 
   on_macos do
-    sha256 :no_check # Riflay-macos.dmg
+    sha256 "f4a79bf69db6d32e800bd6fb6a7e6dc6b732773f6d3601cef34824b461528372" # Riflay-macos.dmg
 
     url "https://github.com/Araryarch67/Riflay/releases/download/v#{version}/Riflay-macos.dmg"
 
@@ -33,7 +33,7 @@ cask "riflay" do
     ]
   end
   on_linux do
-    sha256 "6ceb20f36125b624391fa54e0eee05d611c788f97aebfcf1e94d023e8060133e" # Riflay-linux-x86_64.AppImage
+    sha256 "bb43cdab67dd4ae1b129b70daa4076eb5651b8d12fd6c779d732361c1a1012e0" # Riflay-linux-x86_64.AppImage
 
     url "https://github.com/Araryarch67/Riflay/releases/download/v#{version}/Riflay-linux-x86_64.AppImage"
 
