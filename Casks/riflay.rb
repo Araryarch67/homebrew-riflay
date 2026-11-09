@@ -8,7 +8,7 @@ cask "riflay" do
   version "1.3.1"
 
   on_macos do
-    sha256 "ff5212b03b3bd437c7f79a8ccb0e6f7393bfc2268f4e170b39a4fab697a7af39" # Riflay-macos.dmg
+    sha256 "104ea6857604fcbd2a94a6eff28cb1446fc209c822954a7537a4d9df4c9f9b6b" # Riflay-macos.dmg
 
     url "https://github.com/Araryarch67/Riflay/releases/download/v#{version}/Riflay-macos.dmg"
 
@@ -34,7 +34,7 @@ cask "riflay" do
     ]
   end
   on_linux do
-    sha256 "400940d0d9de1063254bfb5df2da0fd838e09bd4bb68723b0543e2a82bfb270e" # Riflay-linux-x86_64.AppImage
+    sha256 "f818af56f0bb27741ef6572874d3e8a2dc176069f8ebe1943dc695d8f499dbcc" # Riflay-linux-x86_64.AppImage
 
     url "https://github.com/Araryarch67/Riflay/releases/download/v#{version}/Riflay-linux-x86_64.AppImage"
 
