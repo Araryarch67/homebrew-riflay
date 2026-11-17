@@ -5,10 +5,10 @@
 # A release without the macOS build (a failed macOS job) leaves the macOS sha256
 # unchecked, and its URL has nothing to fetch.
 cask "riflay" do
-  version "1.3.2"
+  version "1.6.1"
 
   on_macos do
-    sha256 "3e194b061c1905a75092e456f941980e5d9a1d0dbe1b73d6d3ba47ba8002cfab" # Riflay-macos.dmg
+    sha256 "dfdee85aad4cfc14700b37aafb30de78f0ec85b63e5e90637695b365786ee90a" # Riflay-macos.dmg
 
     url "https://github.com/Araryarch67/Riflay/releases/download/v#{version}/Riflay-macos.dmg"
 
@@ -34,7 +34,7 @@ cask "riflay" do
     ]
   end
   on_linux do
-    sha256 "c1a2d2da1fd0d384e4ad92926cd458b603b453e3f25684d59c3a54692ad2c8da" # Riflay-linux-x86_64.AppImage
+    sha256 "81b291cd97521a2b0ae119fca7f2ff110528b26ab7ab8f0e275ab420b7ca1216" # Riflay-linux-x86_64.AppImage
 
     url "https://github.com/Araryarch67/Riflay/releases/download/v#{version}/Riflay-linux-x86_64.AppImage"
 
